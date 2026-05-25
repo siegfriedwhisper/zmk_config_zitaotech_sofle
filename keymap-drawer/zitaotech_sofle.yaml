@@ -49,7 +49,7 @@ layers:
   - B
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - PG DOWN
+  - PAGE DOWN
   - PG UP
   - N
   - M
