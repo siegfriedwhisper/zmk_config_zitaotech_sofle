@@ -118,7 +118,8 @@
                       &kp LCMD   &kp LALT   &kp SPACE   &kp SPACE  &to 0                            &to 2                         &kp KP_PLUS   &kp KP_MINUS   &kp KP_ASTERISK  &kp KP_DIVIDE
 
             >;
-            sensor-bindings = <&BLE_encoder &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&BLE_encoder>,
+                              <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
         raise_layer {
             display-name = "FUNCTION";
