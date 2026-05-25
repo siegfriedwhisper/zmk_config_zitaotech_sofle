@@ -127,7 +127,7 @@
 &kp TAB     &kp F5    &kp F6     &kp F7     &kp F8     &none                                                         &none        &none       &kp LBKT   &kp RBKT    &none       &none
 &kp LSHFT   &kp F9    &kp F10    &kp F11    &kp F12    &none       &mkp LCLK                 &none                   &none        &none       &kp SEMI   &kp APOS    &kp RETURN  &kp RETURN
 &kp LCTRL   &kp Z     &kp X      &kp C      &kp V      &none       &mkp LCLK    &mkp RCLK    &kp PG_DOWN  &kp PG_UP  &none        &none       &kp COMMA  &kp DOT     &none       &kp DEL
-                      &kp LCMD   &kp LALT   &kp SPACE  &kp SPACE   &to 1                     &to 0                   &trans       &trans      &trans     &trans
+                      &kp LCMD   &kp LALT   &kp SPACE  &kp SPACE   &to 1                     &to 0                   &none        &none       &none      &none
             >;
         }; 
         MOUSE_layer {
