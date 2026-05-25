@@ -124,8 +124,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-DEFAILT">
-<text x="0" y="28" class="label" id="DEFAILT">DEFAILT:</text>
+<g transform="translate(30, 0)" class="layer-DEFAULT">
+<text x="0" y="28" class="label" id="DEFAULT">DEFAULT:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 67)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -685,8 +685,8 @@ path.combo {
 </g>
 <g transform="translate(374, 308) rotate(23.869)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#DEFAILT">
-<text x="0" y="0" class="key tap layer-activator">DEFAILT</text>
+<a href="#DEFAULT">
+<text x="0" y="0" class="key tap layer-activator">DEFAULT</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(483, 313) rotate(-23.869)" class="key keypos-61">
@@ -973,8 +973,8 @@ path.combo {
 </g>
 <g transform="translate(483, 313) rotate(-23.869)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#DEFAILT">
-<text x="0" y="0" class="key tap layer-activator">DEFAILT</text>
+<a href="#DEFAULT">
+<text x="0" y="0" class="key tap layer-activator">DEFAULT</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(550, 293) rotate(-11.93)" class="key trans keypos-62">
@@ -1237,14 +1237,14 @@ path.combo {
 </g>
 <g transform="translate(374, 308) rotate(23.869)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#DEFAILT">
-<text x="0" y="0" class="key tap layer-activator">DEFAILT</text>
+<a href="#DEFAULT">
+<text x="0" y="0" class="key tap layer-activator">DEFAULT</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(483, 313) rotate(-23.869)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#DEFAILT">
-<text x="0" y="0" class="key tap layer-activator">DEFAILT</text>
+<a href="#DEFAULT">
+<text x="0" y="0" class="key tap layer-activator">DEFAULT</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(550, 293) rotate(-11.93)" class="key keypos-62">
@@ -1253,8 +1253,8 @@ path.combo {
 </g>
 <g transform="translate(616, 259)" class="key keypos-63">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#DEFAILT">
-<text x="0" y="0" class="key tap layer-activator">DEFAILT</text>
+<a href="#DEFAULT">
+<text x="0" y="0" class="key tap layer-activator">DEFAULT</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(672, 252)" class="key keypos-64">

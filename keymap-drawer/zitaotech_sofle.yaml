@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: zitaotech_sofle}
 layers:
-  DEFAILT:
+  DEFAULT:
   - ESC
   - '1'
   - '2'
@@ -128,7 +128,7 @@ layers:
   - LALT
   - SPACE
   - SPACE
-  - {t: DEFAILT, h: toggle}
+  - {t: DEFAULT, h: toggle}
   - {t: FUNCTION, h: toggle}
   - KP PLUS
   - KP MINUS
@@ -196,7 +196,7 @@ layers:
   - SPACE
   - SPACE
   - {t: NUM & DIR, h: toggle}
-  - {t: DEFAILT, h: toggle}
+  - {t: DEFAULT, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -262,9 +262,9 @@ layers:
   - LGUI
   - LALT
   - SPACE
-  - {t: DEFAILT, h: toggle}
-  - {t: DEFAILT, h: toggle}
+  - {t: DEFAULT, h: toggle}
+  - {t: DEFAULT, h: toggle}
   - SPACE
-  - {t: DEFAILT, h: toggle}
+  - {t: DEFAULT, h: toggle}
   - ''
   - '&msc SCRL_DOWN'
