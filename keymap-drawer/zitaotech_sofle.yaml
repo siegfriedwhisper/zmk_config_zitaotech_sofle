@@ -197,10 +197,10 @@ layers:
   - SPACE
   - {t: NUM & DIR, h: toggle}
   - {t: DEFAULT, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   MOUSE:
   - ESC
   - '1'
