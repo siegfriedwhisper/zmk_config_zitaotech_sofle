@@ -116,7 +116,7 @@ layers:
   - ''
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - PG DOWN
+  - PAGE DOWN
   - PG UP
   - ''
   - KP 0
@@ -183,7 +183,7 @@ layers:
   - ''
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - PG DOWN
+  - PAGE DOWN
   - PG UP
   - ''
   - ''
