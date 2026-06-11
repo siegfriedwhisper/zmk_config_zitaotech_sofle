@@ -27,6 +27,15 @@
 };
 
 / {
+    input_processors {
+        zip_temp_layer: zip_temp_layer {
+            compatible = "zmk,input-processor-temp-layer";
+            #input-processor-cells = <2>;
+        };
+    };
+};
+
+/ {
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
