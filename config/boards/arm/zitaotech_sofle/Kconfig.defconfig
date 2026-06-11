@@ -14,7 +14,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 endif # BOARD_ZITAOTECH_SOFLE_LEFT
 
 
-if BOARD_ZITAOTECH_SOFLE_LEFT || BOARD_ZITAOTECH_SOFLE_RIGHT
+if BOARD_ZITAOTECH_SOFLE_LEFT || BOARD_ZITAOTECH_SOFLE_NUMPAD
 
 if ZMK_BACKLIGHT
 
@@ -26,6 +26,7 @@ config LED_PWM
 
 endif # ZMK_BACKLIGHT
 
+if BOARD_ZITAOTECH_SOFLE_LEFT
 config BOARD
     default "ZITAOTECH_SOFLE"
 
@@ -34,8 +35,26 @@ config ZMK_SPLIT
 
 config ZMK_SPLIT_PERIPHERAL_HID_INDICATORS
     default y
+endif
 
 config BT_CTLR
     default BT
 
-endif # BOARD_ZITAOTECH_SOFLE_LEFT || BOARD_ZITAOTECH_SOFLE_RIGHT
+endif # BOARD_ZITAOTECH_SOFLE_LEFT || BOARD_ZITAOTECH_SOFLE_NUMPAD
+
+
+# =====================================================
+# Numpad — standalone, no split
+# =====================================================
+if BOARD_ZITAOTECH_SOFLE_NUMPAD
+
+config ZMK_KEYBOARD_NAME
+    default "ZITAOTECH NUMPAD"
+
+config BOARD
+    default "ZITAOTECH_SOFLE_NUMPAD"
+
+config ZMK_SPLIT
+    default n
+
+endif # BOARD_ZITAOTECH_SOFLE_NUMPAD
