@@ -58,6 +58,11 @@
     };
 };
 
+&bbtrackball_listener {
+    /delete-property/ input-processors;
+    input-processors = <&mouse_scroll>;
+};
+
 / {
     behaviors {
         td0: tap_dance_0 {
