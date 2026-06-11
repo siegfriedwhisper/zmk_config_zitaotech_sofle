@@ -4,5 +4,5 @@
 config BOARD_ZITAOTECH_SOFLE_LEFT
     bool
 
-config BOARD_ZITAOTECH_SOFLE_RIGHT
-    bool
+# config BOARD_ZITAOTECH_SOFLE_RIGHT
+#     bool
