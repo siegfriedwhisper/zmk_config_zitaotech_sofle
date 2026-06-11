@@ -184,7 +184,7 @@
 
 &bbtrackball_listener {
     status = "okay";
-    input-processors = <&mouse_scroll>;
+
 };
 
 lpm_view_spi: &spi2 {
