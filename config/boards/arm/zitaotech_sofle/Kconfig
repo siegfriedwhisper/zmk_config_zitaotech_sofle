@@ -4,5 +4,9 @@
 config BOARD_ZITAOTECH_SOFLE_LEFT
     bool
 
-config BOARD_ZITAOTECH_SOFLE_RIGHT
+# Numpad variant (standalone, left PCB)
+config BOARD_ZITAOTECH_SOFLE_NUMPAD
     bool
+
+# config BOARD_ZITAOTECH_SOFLE_RIGHT
+#     bool
