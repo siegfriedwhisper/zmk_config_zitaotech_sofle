@@ -19,10 +19,6 @@
 
 / {
     input_processors {
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,input-processor-mouse-scroll";
-            #input-processor-cells = <0>;
-        };
         zip_temp_layer: zip_temp_layer {
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
@@ -56,11 +52,6 @@
             bindings = <&kp UP>;
         };
     };
-};
-
-&bbtrackball_listener {
-    /delete-property/ input-processors;
-    input-processors = <&mouse_scroll>;
 };
 
 / {
