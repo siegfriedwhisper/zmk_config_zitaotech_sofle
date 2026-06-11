@@ -9,7 +9,6 @@
 #include "zitaotech_sofle.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-#define MOUSE_LAYER_ID 3
 
 
 / {
@@ -124,18 +123,18 @@
 };
 
 
-/ {
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        trackpoint_split: trackpoint_split@0 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-        };
-    };
-
-};
+// / {
+//     split_inputs {
+//         #address-cells = <1>;
+//         #size-cells = <0>;
+// 
+//         trackpoint_split: trackpoint_split@0 {
+//             compatible = "zmk,input-split";
+//             reg = <0>;
+//         };
+//     };
+// 
+// };
 
 / {
 //     split_inputs {
@@ -164,11 +163,11 @@
 };
 
 / {
-    trackpoint_listener: trackpoint_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&trackpoint_split>;
-    };
+//     trackpoint_listener: trackpoint_listener {
+//         compatible = "zmk,input-listener";
+//         status = "disabled";
+//         device = <&trackpoint_split>;
+//     };
 //     bbtrackpad_listener: bbtrackpad_listener {
 //         compatible = "zmk,input-listener";
 //         status = "disabled";
@@ -181,15 +180,15 @@
     };
 };
 
-&trackpoint_listener {
-    status = "okay";
-    input-processors =
-        <&zip_temp_layer 3 600>,
-        <&ip_behaviors0>,
-        <&ip_behaviors1>,
-        <&ip_behaviors2>,
-        <&ip_behaviors3>;
-};
+// &trackpoint_listener {
+//     status = "okay";
+//     input-processors =
+//         <&zip_temp_layer 3 600>,
+//         <&ip_behaviors0>,
+//         <&ip_behaviors1>,
+//         <&ip_behaviors2>,
+//         <&ip_behaviors3>;
+// };
 
 // &bbtrackpad_listener {
 //     status = "okay";
@@ -197,6 +196,7 @@
 
 &bbtrackball_listener {
     status = "okay";
+    input-processors = <&mouse_scroll>;
 };
 
 lpm_view_spi: &spi2 {
