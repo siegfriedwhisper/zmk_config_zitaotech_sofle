@@ -220,8 +220,8 @@ static void bbtrackball_work_handler(struct k_work *work) {
 
     uint32_t now = k_uptime_get_32();
 
-    int dx = dx_acc;
-    int dy = dy_acc;
+    int dx = dy_acc;  // swapped
+    int dy = dx_acc;  // swapped
 
     dx_acc = 0;
     dy_acc = 0;
