@@ -267,8 +267,8 @@ static void bbtrackball_work_handler(struct k_work *work) {
     }
 
     if (space_pressed || capslock) {
-        input_report_rel(dev, INPUT_REL_X, -dx, false, K_NO_WAIT);
-        input_report_rel(dev, INPUT_REL_Y, -dy, true, K_NO_WAIT);
+        input_report_rel(dev, INPUT_REL_X, dx, false, K_NO_WAIT);
+        input_report_rel(dev, INPUT_REL_Y, dy, true, K_NO_WAIT);
         return;
     }
 
