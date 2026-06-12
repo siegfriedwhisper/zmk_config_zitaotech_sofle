@@ -50,7 +50,7 @@ static struct k_work_q bbtrackball_work_q;
  * Config
  * ========================================================= */
 
-#define BASE_MOVE_PIXELS 3
+#define BASE_MOVE_PIXELS 2
 #define EXPONENTIAL_BASE 1.12f
 #define SPEED_SCALE 60.0f
 
@@ -272,8 +272,8 @@ static void bbtrackball_work_handler(struct k_work *work) {
         return;
     }
 
-    input_report_rel(dev, INPUT_REL_HWHEEL, -dx, false, K_NO_WAIT);
-    input_report_rel(dev, INPUT_REL_WHEEL, dy, true, K_NO_WAIT);
+    input_report_rel(dev, INPUT_REL_HWHEEL, dx, false, K_NO_WAIT);
+    input_report_rel(dev, INPUT_REL_WHEEL, -dy, true, K_NO_WAIT);
 }
 
 /* =========================================================
