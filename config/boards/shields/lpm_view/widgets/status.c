@@ -149,15 +149,15 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_obj_create(parent);
     lv_obj_set_size(widget->obj, 144, 72);
 
-    // Canvas for battery + connection status (72x72, bottom-left)
-    lv_obj_t *top = lv_canvas_create(widget->obj);
-    lv_obj_align(top, LV_ALIGN_BOTTOM_LEFT, 0, 0);
-    lv_canvas_set_buffer(top, widget->cbuf, CANVAS_SIZE, CANVAS_SIZE, LV_IMG_CF_TRUE_COLOR);
-
-    // Blackhole image (120x72, fills remaining space)
+    // Blackhole image (120x72, background layer)
     lv_obj_t *art = lv_img_create(widget->obj);
     lv_img_set_src(art, &blackhole);
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 20, 0);
+
+    // Canvas for battery + connection status (72x72, on top of blackhole)
+    lv_obj_t *top = lv_canvas_create(widget->obj);
+    lv_obj_align(top, LV_ALIGN_BOTTOM_LEFT, 0, 0);
+    lv_canvas_set_buffer(top, widget->cbuf, CANVAS_SIZE, CANVAS_SIZE, LV_IMG_CF_TRUE_COLOR);
 
     sys_slist_append(&widgets, &widget->node);
     widget_battery_status_init();
