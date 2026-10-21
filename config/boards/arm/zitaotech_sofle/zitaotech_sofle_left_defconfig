@@ -27,6 +27,9 @@ CONFIG_FLASH_MAP=y
 # Enable Signal Power Plus
 CONFIG_BT_CTLR_TX_PWR_PLUS_8=y
 
+# 无接收器单左手：右手不存在，别让 split central 开机就去扫描（ZMK 默认 1 个外设）
+CONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS=0
+
 # Set max connected devices to 4
 CONFIG_BT_MAX_CONN=5
 CONFIG_BT_MAX_PAIRED=5
